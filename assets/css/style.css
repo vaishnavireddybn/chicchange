@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    color: #3a3a3a;
+}
+
+/* logo */
+ 
+#logo img {
+    max-width: 15%;
+    max-height: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/* navigation links */
+
+nav {
+    text-align: center;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #252525;
+    display: inline-block;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#menu li {
+    float: left;
+    list-style-type: none;
+    margin: 20px;
+}
+
+#menu a {
+    display: block;
+    color: #3a3a3a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+#menu a:hover {
+background-color: #3a3a3a;
+color: whitesmoke;
+border-radius: 3px;
+}
+
+.active {
+    border: 2px solid #3a3a3a;
+  }
+
+/* hero image */
+
+#hero-outer {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+    align-items: center;
+}
+
+#hero-image {
+    height: 250px;
+    width: 100%;
+    background: url('../image/lastryko.jpg') center center;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* hero image text */
+
+#hero-text {
+    font-size: 200%;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    height: 60%;
+    padding: 10px;
+
+    background-color: whitesmoke;
+    
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#hero-text h2 {
+    font-weight: bold;
+}
+
+#hero-text h3 {
+    margin-top: 20px;
+    font-weight: lighter;
+}
+
+/* about us */
+
+#about-us {
+    height: 25%;
+    width: 70%;
+    margin: 1% 2% 5% 2%;
+    background: whitesmoke;
+    margin-left: 15%;
+    padding: 20px;
+
+    position: relative;
+}
+
+#about-us img {
+    height: 30%;
+    width: 30%;
+    float: left;
+    margin: 2% 2% 2% 2%;
+}
+
+#about-us hr {
+    border-bottom: 2px solid #3a3a3a;
+    width: 13%;
+    margin: 1px;
+}
+
+#about-us p {
+    font-weight: 500;
+    margin: 15px 15px 10px 15px;
+}
+
+#about-us h2 {
+    margin-top: 1%;
+}
+
+/* footer */
+
+footer {
+    height: 100px;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+/* contact and social media info icons */
+
+li {
+    display: inline-block;
+}
+
+.social-networks {
+    float: right;
+}
+
+.social-networks i {
+    font-size: 140%;
+    color: #3a3a3a;
+    margin-right: 20px;
+}
+
+.contact {
+    float: left;
+}
+
+.contact i {
+    font-size: 140%;
+    color: #3a3a3a;
+    margin-left: 20px;
+}
+
+/* email newsletter signup footer section */
+
+#email {
+    border: 2px solid #3a3a3a;
+    font-size: 110%;
+    margin-top: 30px;
+    margin-left: 25%;
+    width: 40%;
+    padding: 5px;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    border-radius: 3px;
+}
+
+#submit {
+    background-color: #3f3f3f;
+    color: whitesmoke;
+    font-size: 105%;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    margin-left: 45%;
+    width: 10%;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+#submit:hover {
+    background-color: #252525;
+    color: whitesmoke;
+    }
+
+
+/* copyright footer section */
+
+footer > p {
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* reasons section */
+
+#reasons {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#reasons div {
+    background-image: url(../image/lastryko.jpg);
+    width: 20%;
+    height: 200px;
+    float: left;
+    padding: 10px 0 0 5px;
+    text-align: center;
+    border: 2px solid #3a3a3a;
+    box-sizing: border-box;
+    margin-left: 4%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    transition: transform .2s;
+}
+
+#reasons div:hover {
+    transform: scale(1.1);
+}
+
+#reasons h2 {
+    font-family: Montserrat, sans-serif;
+    background-color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 900;
+    margin-right: 7px;
+}
+
+#reasons i {
+    font-size: 350%;
+    margin-bottom: 5px;
+    margin-top: 0;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#reasons h4 {
+    font-family: Montserrat, sans-serif;
+    background-color: whitesmoke;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 110%;
+    margin-right: 7px;
+}
+
+/* gallery */
+
+img {
+    width: 100%;
+}
+      
+#photos {
+    column-count: 4;
+    column-gap: 10px;
+    margin-right: 20px;
+}
+      
+#photos .gallery {
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+/* timetable */
+
+#timetable {
+    background-image: url('../image/lastryko.jpg');
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#timetable h1 {
+    margin-top: 3%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 200%;
+    background-color: whitesmoke;
+    margin-left: 36%;
+    margin-right: 33%;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+}
+
+#timetable h4 {
+    font-size: 150%;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 10px 0 10px 15px;
+    width: 30%;
+    margin-left: 36%;
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    line-height: 2;
+}
+
+/* media queries */
+
+/*for larger to medium size from 1200px wide and down */
+
+@media screen and (max-width: 1200px) {
+
+    #logo img {
+        max-width: 15%;
+        max-height: 15%;
+        margin-top: 40px;
+    }
+
+    #menu li {
+        margin: 20px 0 10px 15px;
+    }
+
+
+    #about-us img {
+        height: 40%;
+        width: 40%;
+        padding: 10px;
+    }
+
+    #about-us hr {
+        width: 20%;
+    }
+
+    #about-us p {
+        text-align: justify;
+        font-size: 110%;
+    }
+    
+    #email {
+        margin-left: 15%;
+        width: 48%;
+        font-size: 85%;
+    }
+
+    #submit {
+        width: 17%;
+        margin-left: 42%;
+    }
+
+    #reasons div {
+        padding: 10px 0 0 5px;
+
+    }
+
+    #timetable h4 {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    #timetable h1 {
+        margin-left: 25%;
+        margin-right: 23%;
+    }
+}
+
+/* for medium screen sizes from 950px wide and down */
+
+@media screen and (max-width: 950px) {
+
+    #about-us img {
+        width: 60%;
+        height: 60%;
+    }
+
+    #hero-text {
+        font-size: 180%;
+    }
+
+    #reasons div {
+        width: 35%;
+        margin-left: 10%;
+    }
+
+    #photos {
+        column-count: 2;
+    }
+
+    #timetable h4 {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    #timetable h1 {
+        margin-left: 25%;
+        margin-right: 23%;
+    }
+
+    #email {
+        width: 50%;
+    }
+}
+
+/* for small screen sizes 768px and down */
+
+@media screen and (max-width: 768px) {
+
+    #logo img {
+        max-width: 20%;
+        max-height: 20%;
+        margin-top: 25px;
+    }
+
+     #menu li {
+        float: none;
+        list-style-type: none;
+        margin: 20px;
+        display: block;
+    }
+
+    #menu {
+        font-size: 100%;
+    }
+
+    #hero-text {
+        font-size: 160%;
+    }
+
+    #email {
+        width: 55%;
+        font-size: 75%;
+        margin-left: 25%;
+    }
+
+    #submit {
+        width: 21%;
+    }
+
+    #timetable h4 {
+        font-size: 140%;
+    }
+}
+
+/* for small screen sizes 600px and down */
+
+@media screen and (max-width: 600px) {
+
+    #logo img {
+        max-width: 25%;
+        max-height: 25%;
+        margin-top: 25px;
+    }
+
+    #menu li {
+        float: none;
+        list-style-type: none;
+        margin: 20px;
+        display: block;
+    }
+
+    #menu {
+        font-size: 80%;
+    }
+
+    #hero-text {
+        font-size: 140%;
+        width: 350px;
+    }
+
+    #about-us img {
+        width: 90%;
+        height: 90%;
+    }
+
+    #about-us h2 {
+        text-align: center;
+    }
+
+    #about-us hr {
+        width: 30%;
+        margin: auto;
+    }
+
+    #about-us {
+        height: 25%;
+        width: 80%;
+        margin: 2% 1% 2% 2%;
+        background: whitesmoke;
+        margin-left: 7%;
+        padding: 20px;
+        position: relative;
+    }
+
+    #email {
+        width:80%;
+        font-size: 70%;
+        margin-left: 10%;
+    }
+
+    #submit {
+        width: 35%;
+        margin-left: 35%;
+        font-size: 100%;
+    }
+
+    #reasons div {
+        width: 65%;
+        margin-left: 20%;
+        margin-bottom: 4%;
+    }
+
+    #timetable h4 {
+        width: 62%;
+        font-size: 120%;
+        margin-left: 17%;
+        padding: 5px 5px 5px 5px;
+    }
+
+    #timetable h1 {
+        margin-top: 5%;
+        margin-right: 17%;
+        font-size: 160%;
+        margin-left: 17%;
+    }
+}
+
+/* for extra small screen sizes 400px and down */
+
+@media screen and (max-width: 400px) {
+
+    #hero-text {
+        font-size: 120%;
+        width: 250px;
+    }
+
+    #about-us {
+        height: 25%;
+        width: 75%;
+        margin-left: 6%;
+    }
+
+    #about-us hr {
+        width: 50%;
+    }
+
+    #about-us p {
+        font-size: 85%;
+    }
+
+    #email {
+        width: 90%;
+        font-size: 50%;
+        margin-left: 6%;
+    }
+
+    #submit {
+        width: 45%;
+        font-size: 85%;
+        margin-left: 30%;
+    }
+
+    #reasons div {
+        width: 65%;
+        margin-left: 20%;
+        margin-top: 3%;
+    }
+
+    #photos {
+        column-count: 1;
+    }
+
+    #timetable h1 {
+        margin-left: 20%;
+        font-size: 150%;
+    }
+
+    #timetable h4 {
+        width: 58%;
+        font-size: 110%;
+        margin-left: 20%;
+        padding: 5px 5px 5px 5px;
+    }
+}

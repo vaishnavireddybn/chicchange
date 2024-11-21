@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChicChange - Articles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .articles-section h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .articles-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .article-item {
+            background-color: #eaeaea;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .article-item h2 {
+            margin-bottom: 10px;
+        }
+
+        .article-item p {
+            color: #666;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover, .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section class="articles-section">
+        <div class="container">
+            <h1>Fashion for the Future: Articles</h1>
+            <div class="articles-list">
+                <div class="article-item" onclick="openArticle('article1')">
+                    <h2>Sustainable Fashion: The Basics</h2>
+                    <p>Learn the essentials of eco-friendly fashion...</p>
+                    <button>View Article</button>
+                </div>
+                <div class="article-item" onclick="openArticle('article2')">
+                    <h2>How to Upcycle Old Clothes</h2>
+                    <p>Discover creative ways to give your old clothes new life...</p>
+                    <button>View Article</button>
+                </div>
+                <div class="article-item" onclick="openArticle('article3')">
+                    <h2>Eco-Friendly Fashion Brands to Support</h2>
+                    <p>Find the top ethical brands that are leading the way in sustainability...</p>
+                    <button>View Article</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Modal -->
+    <div id="article-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeArticle()">&times;</span>
+            <div id="article-content">
+                <!-- The selected article will load here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openArticle(articleId) {
+            const modal = document.getElementById("article-modal");
+            const articleContent = document.getElementById("article-content");
+
+            // Load the corresponding article content
+            if (articleId === 'article1') {
+                articleContent.innerHTML = `
+                    <h2>Sustainable Fashion: The Basics</h2>
+                    <p>Content about sustainable fashion... Discover how adopting eco-friendly practices can make a positive impact on the planet.</p>`;
+            } else if (articleId === 'article2') {
+                articleContent.innerHTML = `
+                    <h2>How to Upcycle Old Clothes</h2>
+                    <p>Content about upcycling clothes... Unleash your creativity by turning old fabrics into new fashion.</p>`;
+            } else if (articleId === 'article3') {
+                articleContent.innerHTML = `
+                    <h2>Eco-Friendly Fashion Brands to Support</h2>
+                    <p>Content about eco-friendly fashion brands... Learn which brands are making the biggest strides towards sustainability.</p>`;
+            }
+
+            // Show the modal
+            modal.style.display = "block";
+        }
+
+        function closeArticle() {
+            const modal = document.getElementById("article-modal");
+            modal.style.display = "none";
+        }
+
+        // Close the modal if user clicks outside the modal content
+        window.onclick = function(event) {
+            const modal = document.getElementById("article-modal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
